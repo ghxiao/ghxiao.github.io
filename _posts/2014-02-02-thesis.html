@@ -1,0 +1,90 @@
+---
+layout: default
+title: Dr. Guohui Xiao -- PhD Thesis
+permalink: thesis.html
+---
+
+<h1>
+Guohui Xiao's PhD Thesis
+</h1>
+
+
+<h2>Inline Evaluation of Hybrid Knowledge Bases</h2>
+<ul>
+    <li>Supervisor: Prof. Dr. Thomas Eiter</li>
+    <li>External Reviewers: Prof. Dr. Diego Calvanese, Prof. Dr. Sebastian Rudolph</li>
+    <li>Thesis: <a href="/publications/2014-phd-thesis-Xiao-inline-evaluaiton.pdf">.pdf</a> (updated Feb 2, 2014) </li>
+    <li>Slides for the defense: <a href="/publications/2014-phd-thesis-defense-slides.pdf">.pdf</a></li>
+    <li>DReW system: <a href="#">DReW v0.3</a>, <a href="https://github.com/ghxiao/drew">Source code on Github</a></li>
+    <li>Benchmarks
+    <ul>
+        <li>Graph: ontologies, programs</li>
+        <li>University: TBox, ABox Generator, programs</li>
+        <li>GeoData: ontologies, programs</li>
+        <li>EDI</li>
+        <li>Policy: ontologies, default logic programs</li>
+    </ul>
+    </li>
+    <li><b>Abstract</b>
+
+<p>
+The deployment of knowledge representation formalisms to the Web has
+created the need for hybrid formalisms that combine heterogeneous
+knowledge bases (KBs). There are many formalisms proposed by the knowledge
+representation community for modeling knowledge bases, among
+which two families are of great importance, in particular in the context of
+semantic Web. One is the family of Description Logics (DLs) based ontologies,
+and the other is rule-based logic programming.
+</p>
+
+<p>
+The challenge of combining ontologies and rules has been
+drawing a lot of attentions in recent years. Among several proposed
+approaches, loose coupling of rules and ontologies aims at combining
+respective knowledge bases by means of a clean interfacing semantics,
+in which roughly speaking inferences are mutually exchanged such that
+the one KB takes the imported information into account, and exports in
+turn conclusions to the other KB. This approach is fostered by
+non-monotonic description logic (dl-) programs, where this exchange is
+handled by a generalization of the answer set semantics of
+non-monotonic logic programs.
+</p>
+
+<p>
+Because of the loose coupling nature of dl-Programs, one can build
+engines for dl-Programs on top of legacy reasoners. For instance, the
+dlvhex system with dl-plugin, which is a state-of-the-art system for
+dl-Programs, is built on top of the ASP reasoner DLV and the DL
+reasoner RacerPro. Although this architecture is very elegant, the
+performance of this implementation is suboptimal. We observe that the
+overhead of calling external reasoners in the classical approach can
+be the bottleneck of the performance.
+</p>
+
+<p>
+The aim of this thesis is to improve the reasoning efficiency over
+hybrid KBs. We propose a new strategy, called inline
+evaluation, which compiles the whole hybrid KB into a new KB using
+only one single formalism. Hence we can use a single reasoner to do
+the reasoning tasks, and improve the efficiency of hybrid reasoning.
+In case of DL-Programs, we design an abstract framework rewriting
+dl-Programs to Datalog programs with negation, by compiling all
+components carefully and combining them together into a single program.
+The reduction is sound and complete when the DL ontologies are
+"Datalog-rewritable". We show that many DLs are Datalog-rewritable
+by introducing concrete rewriting algorithms. Furthermore, we show
+that inline evaluation can be used in hybrid KBs of other formalisms.
+</p>
+
+<p>
+To confirm the hypothesis that the inline evaluation is superior to
+the classical approach of ``ASP + external DL reasoner'', we implement
+the inline evaluation method in the novel DReW system for
+dl-Programs. We conduct an extensive evaluation on several benchmark
+suites and show that DReW outperforms the classical approach in general,
+especially for
+dl-Programs of complex structure or with large instances.
+</p>
+</li>
+</ul>
+
