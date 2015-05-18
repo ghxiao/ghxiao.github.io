@@ -4,6 +4,14 @@ ghxiao.github.io
 Source code for my personal website: http://www.ghxiao.org
 
 
+Installation
+------------
+```
+$ bundle install
+$ jekyll server
+```
+
+
 How to update publications
 --------------------------
 
