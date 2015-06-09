@@ -1,0 +1,58 @@
+\documentclass{article}
+
+\usepackage{helvet}
+\usepackage{hyperref}
+\usepackage{enumerate}
+\usepackage{paralist}
+\usepackage{xcolor}
+
+\usepackage{fullpage}
+
+\usepackage[backend=biber,defernumbers,sortcites,sorting=ydnt,maxnames=99]{biblatex}
+
+\usepackage{titlesec}
+
+\defbibheading{customeheader}[]{}
+\addbibresource{xiao.bib}
+\nocite{*}
+
+\begin{document}
+
+\section*{Selected Publications}
+
+\subsection*{Journal Articles}
+
+{\sloppy  % to avoid overlong lines
+%\printbibliography[heading=none,type=article,resetnumbers]
+\printbibliography[heading=customeheader,type=article,resetnumbers,notkeyword={submitted}]
+}
+
+\subsection*{Conference Papers}
+
+
+{\sloppy  % to avoid overlong lines
+\printbibliography[heading=customeheader,type=inproceedings,resetnumbers,
+notkeyword={workshop}]
+}
+
+\subsection*{Workshop Papers}
+
+
+{\sloppy  % to avoid overlong lines
+\printbibliography[heading=customeheader,type=inproceedings,resetnumbers,
+keyword={workshop}]
+}
+
+\subsection*{Technical Reports and Project Deliverables}
+
+{\sloppy  % to avoid overlong lines
+\printbibliography[heading=customeheader,type=report,resetnumbers]
+}
+
+\subsection*{Thesis}
+
+{\sloppy  % to avoid overlong lines
+\printbibliography[heading=customeheader,type=thesis,resetnumbers]
+}
+
+\end{document}
