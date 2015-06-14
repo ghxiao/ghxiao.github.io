@@ -1,6 +1,5 @@
  
 /* start css.sty */
-.cmtt-10{font-family: monospace;}
 .cmti-10{ font-style: italic;}
 .small-caps{font-variant: small-caps; }
 p.noindent { text-indent: 0em }
@@ -114,6 +113,7 @@ dd.enumerate {margin-left: 2em;}
 dt.enumerate {float:left; clear:left; margin-right:0.5em; margin-left:0.5em; text-align:right; }
 dt.enumerate{float:left; clear:left; margin-right:0.2em; margin-left:2em;}
 dt.compactenum{float:left; clear:left; margin-right:0.2em; margin-left:2em;}
+.figure img.graphics {margin-left:10%;}
 dt.printshorthands{float:left; clear:left; margin-right:1em;}
 dd.thebibliography {margin-left: 2.5em;}
 dt.thebibliography {float:left; clear:left; margin-right:1em;}
