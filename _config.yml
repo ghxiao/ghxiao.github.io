@@ -1,5 +1,5 @@
-gems:
-  - jekyll-sitemap
+#gems:
+#  - jekyll-sitemap
 
 # Dependencies
 markdown:         rdiscount
@@ -10,6 +10,6 @@ markdown:         rdiscount
 
 # Server
 destination:      ./_gh_pages
-exclude:          [".editorconfig", ".gitignore", "bower.json", "composer.json", "CONTRIBUTING.md", "CNAME", "LICENSE", "Gruntfile.js", "package.json", "node_modules", "README.md", "less"]
+exclude:          [".editorconfig", ".gitignore", "bower.json", "composer.json", "CONTRIBUTING.md", "CNAME", "LICENSE", "Gruntfile.js", "package.json", "node_modules", "README.md", "less", "Gemfile", "Gemfile.lock", "*.py"]
 port:             9001
 
