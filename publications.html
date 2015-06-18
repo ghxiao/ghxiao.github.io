@@ -5,6 +5,13 @@ slug: publications
 permalink: publications.html
 ---
 
+<style>
+    a.coauthor {
+        color: inherit;
+        /*text-decoration: none;*/
+    }
+</style>
+
 <script type="text/javascript">
 
     var coauthors = {
@@ -30,7 +37,7 @@ permalink: publications.html
 
             for (var name in coauthors) {
                 var url = coauthors[name];
-                text = text.replace(new RegExp("(" + name + ")", "ig"), "<a href='" + url + "'>$1</a>");
+                text = text.replace(new RegExp("(" + name + ")", "ig"), "<a href='" + url + "' class='coauthor'>$1</a>");
             }
             this.innerHTML = text;
             //this.innerHTML = text.replace(/(Guohui Xiao)/g, "<a href='http://www.ghxiao.org'>$1</a>")
