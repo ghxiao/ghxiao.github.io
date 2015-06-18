@@ -6,7 +6,36 @@ permalink: publications.html
 ---
 
 <script type="text/javascript">
+
+    var coauthors = {
+        "Diego\\s+Calvanese": "http://www.inf.unibz.it/~calvanese/",
+        "Martin\\s+Giese": "https://heim.ifi.uio.no/martingi/",
+        "Thomas\\s+Eiter": "http://www.kr.tuwien.ac.at/staff/eiter/",
+        "Guohui\\s+Xiao": "http://www.ghxiao.org/",
+        "Je\\w+\\s+Z.\s+Pan": "http://homepages.abdn.ac.uk/jeff.z.pan/pages/",
+        "Mantas\\s+Simkus": "http://www.simkus.info/",
+        "Patrik\\s+Schneider": "http://www.kr.tuwien.ac.at/staff/patrik/",
+        "Roman\\s+Kontchakov": "http://www.dcs.bbk.ac.uk/~roman/",
+        "Martin\\s+Rezk": "http://www.inf.unibz.it/~mrezk/",
+        "Davide\\s+Lanti": "http://www.inf.unibz.it/~dlanti/",
+        "Mariano\\s+Rodriguez-Muro":"http://www.rodriguez-muro.com/home/",
+        "Michael\\s+Zakharyaschev": "http://www.dcs.bbk.ac.uk/~michael/",
+        "Meghyn\\s+Bienvenu": "https://www.lri.fr/~meghyn/",
+        "Magdalena\\s+Ortiz": "http://www.kr.tuwien.ac.at/staff/ortiz/",
+    };
+
     $(document).ready(function () {
+
+        $("dl.thebibliography").html(function (index, text) {
+
+            for (var name in coauthors) {
+                var url = coauthors[name];
+                text = text.replace(new RegExp("(" + name + ")", "ig"), "<a href='" + url + "'>$1</a>");
+            }
+            this.innerHTML = text;
+            //this.innerHTML = text.replace(/(Guohui Xiao)/g, "<a href='http://www.ghxiao.org'>$1</a>")
+        });
+
         $("a[href^='#x']").click(function (e) {
             var href = $(e.target).attr("href");
             $("html, body").scrollTop($(href).offset().top - 85);
