@@ -5,6 +5,15 @@ slug: publications
 permalink: publications.html
 ---
 
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("a[href^='#x']").click(function (e) {
+            var href = $(e.target).attr("href");
+            $("html, body").scrollTop($(href).offset().top - 85);
+            return false;
+        });
+    });
+</script>
 
 {% include pub_body.html %}
 
