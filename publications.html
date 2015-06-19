@@ -45,6 +45,13 @@ permalink: publications.html
                 var url = coauthors[name];
                 text = text.replace(new RegExp("(" + name + ")", "ig"), "<a href='" + url + "' class='coauthor'>$1</a>");
             }
+
+            text = text.replace(new RegExp("“(.*)”", "ig"), "<b>$1</b>");
+
+            text = text.replace(new RegExp("“(.*)", "ig"), "<b>$1</b>");
+
+            text = text.replace(new RegExp("(.*)”", "ig"), "<b>$1</b>");
+
             this.innerHTML = text;
             //this.innerHTML = text.replace(/(Guohui Xiao)/g, "<a href='http://www.ghxiao.org'>$1</a>")
         });
