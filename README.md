@@ -25,4 +25,4 @@ $ export TMPDIR=.
 $ bib2bib  -c 'author:"xiao"' ~/Dropbox/Papers/biblio.bib > xiao.bib
 ```
 
-Copyright (c) 2014-2015 Guohui Xiao
+Copyright (c) 2014-2016 Guohui Xiao
