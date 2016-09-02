@@ -7,7 +7,7 @@ Source code for my personal website: http://www.ghxiao.org
 Installation
 ------------
 ```
-$ bundle install
+$ ****bundle install****
 $ bundle exec jekyll server 
 ```
 
