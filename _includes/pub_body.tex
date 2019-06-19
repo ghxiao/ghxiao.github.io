@@ -33,14 +33,16 @@
 
 {\sloppy  % to avoid overlong lines
 %\printbibliography[heading=none,type=article,resetnumbers]
+\newrefcontext[labelprefix=J]
 \printbibliography[heading=customeheader,type=article,resetnumbers,notkeyword={underreview},notkeyword={notmine}]
 }
 
 \subsection*{Conference Papers}\label{conference}
 
 {\sloppy  % to avoid overlong lines
+\newrefcontext[labelprefix=C]
 \printbibliography[heading=customeheader,type=inproceedings,
-%resetnumbers,
+resetnumbers,
 notkeyword={workshop},notkeyword={notmine}]
 }
 
@@ -97,24 +99,27 @@ notkeyword={workshop},notkeyword={notmine}]
 \subsection*{Workshop Papers}\label{workshop}
 
 {\sloppy  % to avoid overlong lines
+\newrefcontext[labelprefix=W]
 \printbibliography[heading=customeheader,type=inproceedings,
-%resetnumbers,
+resetnumbers,
 keyword={workshop}]
 }
 
 \subsection*{Technical Reports and Project Deliverables}\label{report}
 
 {\sloppy  % to avoid overlong lines
+\newrefcontext[labelprefix=R]
 \printbibliography[heading=customeheader,type=report,
-%resetnumbers,
+resetnumbers,
 notkeyword={notmine}]
 }
 
 \subsection*{Thesis}\label{thesis}
 
 {\sloppy  % to avoid overlong lines
+\newrefcontext[labelprefix=T]
 \printbibliography[heading=customeheader,type=thesis,
-%resetnumbers,
+resetnumbers,
 notkeyword={notmine}]
 }
 
