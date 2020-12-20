@@ -1,5 +1,6 @@
  
 /* start css.sty */
+.cmtt-10{font-family: monospace,monospace;}
 .cmti-10{ font-style: italic;}
 .small-caps{font-variant: small-caps; }
 p{margin-top:0;margin-bottom:0}
@@ -7,12 +8,14 @@ p.indent{text-indent:0;}
 p + p{margin-top:1em;}
 p + div, p + pre {margin-top:1em;}
 div + p, pre + p {margin-top:1em;}
+a { overflow-wrap: break-word; word-wrap: break-word; word-break: break-word; hyphens: auto; }
 @media print {div.crosslinks {visibility:hidden;}}
 a img { border-top: 0; border-left: 0; border-right: 0; }
 center { margin-top:1em; margin-bottom:1em; }
 td center { margin-top:0em; margin-bottom:0em; }
 .Canvas { position:relative; }
 img.math{vertical-align:middle;}
+div.par-math-display, div.math-display{text-align:center;}
 li p.indent { text-indent: 0em }
 li p:first-child{ margin-top:0em; }
 li p:last-child, li div:last-child { margin-bottom:0.5em; }
@@ -29,7 +32,7 @@ div.obeylines-v p { margin-top:0; margin-bottom:0; }
 td.displaylines {text-align:center; white-space:nowrap;}
 .centerline {text-align:center;}
 .rightline {text-align:right;}
-div.verbatim {font-family: monospace,monospace; white-space: nowrap; text-align:left; clear:both; }
+pre.verbatim {font-family: monospace,monospace; text-align:left; clear:both; }
 .fbox {padding-left:3.0pt; padding-right:3.0pt; text-indent:0pt; border:solid black 0.4pt; }
 div.fbox {display:table}
 div.center div.fbox {text-align:center; clear:both; padding-left:3.0pt; padding-right:3.0pt; text-indent:0pt; border:solid black 0.4pt; }
@@ -113,7 +116,6 @@ dt.enumerate {float:left; clear:left; margin-right:0.5em; margin-left:0.5em; tex
 dt.enumerate{float:left; clear:left; margin-right:0.2em; margin-left:2em;}
 dt.compactenum{float:left; clear:left; margin-right:0.2em; margin-left:2em;}
 .rotatebox{display: inline-block;}
-.figure img.graphics {margin-left:10%;}
 dt.printshorthands{float:left; clear:left; margin-right:1em;}
 dd.thebibliography {margin-left: 2.5em;}
 dt.thebibliography {float:left; clear:left; margin-right:1em;}
