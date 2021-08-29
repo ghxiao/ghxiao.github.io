@@ -19,4 +19,4 @@ cd _includes
 ./upp.sh
 ```
 
-Copyright (c) 2014-2019 Guohui Xiao
+Copyright (c) 2014- Guohui Xiao
